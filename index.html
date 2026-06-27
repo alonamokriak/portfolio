@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Plus+Jakarta+Sans:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
     <script src="script.js" defer></script>
@@ -15,7 +14,7 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
-          <h1 class="header__title">Alona Mokriak</h1>
+          <p class="header__title">Alona Mokriak</p>
           <button class="header__burger burger" aria-label="Open menu">
             <span class="burger__line"></span>
             <span class="burger__line"></span>
@@ -42,32 +41,83 @@
             <p class="hero__text">Frontend Developer</p>
             <h1 class="hero__title">
               Alona Mokriak
+              <br />
               <span>builds interfaces</span>
             </h1>
-            <p class="hero__discription">Trainee developer focused on clean HTML, CSS with BEM methodology, and JavaScript. Turning designs into pixel-perfect, working products.</p>
+            <p class="hero__description">Trainee developer focused on clean HTML, CSS with BEM methodology, and JavaScript. Turning designs into pixel-perfect, working products.</p>
           </div>
         </section>
         <section id="project" class="projects">
-          <div class="projects__container"></div>
+          <div class="projects__wrapper">
+            <div class="projects__header">Selected Work</div>
+            <div class="projects__container">
+              <div class="projects__details">
+                <p class="projects__number">01</p>
+                <h3 class="projects__title">COW'BOY Landing</h3>
+                <p class="projects__description">Pixel-perfect landing page for a bicycle brand. Burger menu, custom scrollbar, scroll-to-top — implemented from a design mockup.</p>
+                <ul class="projects__stack stack-list">
+                  <li class="stack-list__item">HTML</li>
+                  <li class="stack-list__item">CSS</li>
+                  <li class="stack-list__item">JS</li>
+                  <li class="stack-list__item">BEM</li>
+                </ul>
+                <a class="projects__link" target="_blank" href="https://landing-cowboy.netlify.app/">Live demo →</a>
+              </div>
+              <div class="projects__details">
+                <p class="projects__number">02</p>
+                <h3 class="projects__title">Todo List</h3>
+                <p class="projects__description">Task manager with localStorage persistence. Source-of-truth array architecture, filtering, and render() pattern — built from scratch.</p>
+                <ul class="projects__stack stack-list">
+                  <li class="stack-list__item">JavaScript</li>
+                  <li class="stack-list__item">DOM</li>
+                  <li class="stack-list__item">localStorage</li>
+                </ul>
+                <a class="projects__link" target="_blank" href="https://app-dev-todo-list.netlify.app/">Live demo →</a>
+              </div>
+              <div class="projects__details">
+                <p class="projects__number">03</p>
+                <h3 class="projects__title">Weather App</h3>
+                <p class="projects__description">Real-time forecast using Open-Meteo API. Async/await, dynamic weather icons, hourly cards for Morning / Afternoon / Evening / Night.</p>
+                <ul class="projects__stack stack-list">
+                  <li class="stack-list__item">API</li>
+                  <li class="stack-list__item">Async/Await</li>
+                  <li class="stack-list__item">Fetch</li>
+                  <li class="stack-list__item">BEM</li>
+                </ul>
+                <a class="projects__link" target="_blank" href="https://app-weather-dev.netlify.app/">Live demo →</a>
+              </div>
+              <div class="projects__details">
+                <p class="projects__number">04</p>
+                <h3 class="projects__title">Calculator</h3>
+                <p class="projects__description">Clean, functional calculator with keyboard support and an eye for UI detail. A solid foundation piece showing logic and layout together.</p>
+                <ul class="projects__stack stack-list">
+                  <li class="stack-list__item">JavaScript</li>
+                  <li class="stack-list__item">CSS</li>
+                  <li class="stack-list__item">Logic</li>
+                </ul>
+                <a class="projects__link" target="_blank" href="https://calculator-app-dev.netlify.app/">Live demo →</a>
+              </div>
+            </div>
+          </div>
         </section>
         <section id="skills" class="skills">
           <div class="skills__container">
-            <div class="skills__text">Tech Stack</div>
-            <div class="skills__content skill">
-              <ul class="skill__list">
-                <li class="skill__item">HTML5</li>
-                <li class="skill__item">CSS3</li>
-                <li class="skill__item">SCSS</li>
-                <li class="skill__item">BEM</li>
-                <li class="skill__item">JavaScript</li>
-                <li class="skill__item">Async / Await</li>
-                <li class="skill__item">Fetch API</li>
-                <li class="skill__item">DOM manipulation</li>
-                <li class="skill__item">localStorage</li>
-                <li class="skill__item">Git</li>
-                <li class="skill__item">GitHub</li>
-                <li class="skill__item">Netlify</li>
-                <li class="skill__item">Responsive design</li>
+            <div class="skills__content">
+              <div class="skills__text">Tech Stack</div>
+              <ul class="skills__list">
+                <li class="skills__item">HTML5</li>
+                <li class="skills__item">CSS3</li>
+                <li class="skills__item">SCSS</li>
+                <li class="skills__item">BEM</li>
+                <li class="skills__item">JavaScript</li>
+                <li class="skills__item">Async / Await</li>
+                <li class="skills__item">Fetch API</li>
+                <li class="skills__item">DOM manipulation</li>
+                <li class="skills__item">localStorage</li>
+                <li class="skills__item">Git</li>
+                <li class="skills__item">GitHub</li>
+                <li class="skills__item">Netlify</li>
+                <li class="skills__item">Responsive design</li>
               </ul>
             </div>
           </div>
